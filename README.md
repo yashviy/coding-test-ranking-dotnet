@@ -20,19 +20,18 @@ The assumptions are based on a hypothetical *ads quality management team*, which
 * As a quality manager I want to be able to see the irrelevant ads and from what date they are irrelevant to measure the average quality of the content of the portal.
 
 * As an idealista user, I want to be able to see the ads ordered from best to worst to easily find my home.
+## Important considerations
 
-## Consideraciones importantes
+In this project we provide you with a small *skeleton* written in .Net Core 2.2 (you can port it to Framework 4.X or another version of .Net core)
 
-En este proyecto te proporcionamos un pequeño *esqueleto* escrito en .Net Core 2.2 (puedes pasarlo a Framework 4.X o a otra versión de .Net core) 
+In said *skeleton* we have left for you to complete a [Controller] and a [Repository] in memory. You can create the classes and methods that you consider necessary.
 
-En dicho *esqueleto* hemos dejado para que completes un [Controller] y un [Repository] en memoria. Puedes crear las clases y métodos que consideres necesarios.
+**Data persistence is not part of the goal of the challenge**. If you are not going to use the skeleton that we provide, we suggest you simplify it as much as you can (with an embedded database, "persisting" the objects in memory, using a file...). **The design of a graphical interface is also not** part of the scope of the challenge, therefore you do not need to implement it.
 
-**La persistencia de datos no forma parte del objetivo del reto**. Si no vas a usar el esqueleto que te proporcionamos, te sugerimos que la simplifiques tanto como puedas (con una base de datos embebida, "persistiendo" los objetos en memoria, usando un fichero...). **El diseño de una interfaz gráfica tampoco** forma parte del alcance del reto, por tanto no es necesario que la implementes.
+**Note:** You are not obligated to use the provided project. If you prefer, you can use any other language, framework and/or library. You can even do without the latter if you consider that they are not necessary. What we give the most importance to is having a clean and quality code.
 
-**Nota:** No estás obligado a usar el proyecto proporcionado. Si lo prefieres, puedes usar cualquier otro lenguaje, framework y/o librería. Incluso puedes prescindir de estos últimos si consideras que no son necesarios. A lo que más importancia damos es a tener un código limpio y de calidad.
+## Criteria of acceptance
 
-## Criterios de aceptación
+* Code must compile and be executable :dancer:
 
-* El código debe compilar y ser ejecutable :dancer:
-
-* Debes proporcionar 3 endpoints: Uno para calcular la puntuación de todos los anuncios, otro para listar los anuncios para un usuario de idealista y otro para listar los anuncios para el responsable de del departamento de gestión de calidad.
+* You must provide 3 endpoints: One to calculate the score of all the ads, another to list the ads for an idealista user and another to list the ads for the person in charge of the quality management department.
