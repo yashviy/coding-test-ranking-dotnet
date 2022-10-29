@@ -1,25 +1,25 @@
-# Reto: Servicio para gestión de calidad de los anuncios
+# Challenge: Ad quality management service
 
 [![Build Status](https://travis-ci.org/idealista/coding-test-ranking-dotnet.svg?branch=main)](https://travis-ci.org/idealista/coding-test-ranking-dotnet)
 
-Este repositorio contiene un API parcialmente desarrollada para desarrollar un servicio que se encargue de medir la calidad de los anuncios. Tu objetivo será implementar las historias de usuario que se describen más adelante.
+This repository contains a partially developed API to develop a service that is responsible for measuring the quality of ads. Your goal will be to implement the user stories described below.
 
-Los supuestos están basados en un hipotético *equipo de gestión de calidad de los anuncios*, que demanda una serie de verificaciones automáticas para clasificar los anuncios en base a una serie de características concretas.
+The assumptions are based on a hypothetical *ads quality management team*, which requires a series of automatic checks to classify the ads based on a series of specific characteristics.
 
 ## Historias de usuario
 
-* Yo, como encargado del equipo de gestión de calidad de los anuncios quiero asignar una puntuación a un anuncio para que los usuarios de idealista puedan ordenar anuncios de más completos a menos completos. La puntuación del anuncio es un valor entre 0 y 100 que se calcula teniendo encuenta las siguientes reglas:
-  * Si el anuncio no tiene ninguna foto se restan 10 puntos. Cada foto que tenga el anuncio proporciona 20 puntos si es una foto de alta resolución (HD) o 10 si no lo es.
-  * Que el anuncio tenga un texto descriptivo suma 5 puntos.
-  * El tamaño de la descripción también proporciona puntos cuando el anuncio es sobre un piso o sobre un chalet. En el caso de los pisos, la descripción aporta 10 puntos si tiene entre 20 y 49 palabras o 30 puntos si tiene 50 o mas palabras. En el caso de los chalets, si tiene mas de 50 palabras, añade 20 puntos.
-  * Que las siguientes palabras aparezcan en la descripción añaden 5 puntos cada una: Luminoso, Nuevo, Céntrico, Reformado, Ático.
-  * Que el anuncio esté completo también aporta puntos. Para considerar un anuncio completo este tiene que tener descripción, al menos una foto y los datos particulares de cada tipología, esto es, en el caso de los pisos tiene que tener también tamaño de vivienda, en el de los chalets, tamaño de vivienda y de jardín. Además, excepcionalmente, en los garajes no es necesario que el anuncio tenga descripción. Si el anuncio tiene todos los datos anteriores, proporciona otros 40 puntos.
+* As head of the ad quality management team, I want to assign a score to an ad so that idealista users can sort ads from most complete to least complete. The ad score is a value between 0 and 100 that is calculated taking into account the following rules:
+  * If the ad does not have any photos, 10 points will be deducted. Each photo in the listing earns 20 points if it's a high-resolution (HD) photo, or 10 if it's not.
+  * That the ad has a descriptive text adds 5 points.
+  * The size of the description also earns points when the ad is about a flat or a chalet. In the case of flats, the description earns 10 points if it has between 20 and 49 words or 30 points if it has 50 or more words. In the case of chalets, if it has more than 50 words, add 20 points.
+  * That the following words appear in the description add 5 points each: Bright, New, Central, Renovated, Penthouse.
+  * That the announcement is complete also contributes points. To consider a complete advertisement, it must have a description, at least one photo and the particular data of each type, that is, in the case of flats it must also have the size of the house, in the case of chalets, the size of the house and of garden. In addition, exceptionally, in garages it is not necessary for the advertisement to have a description. If the ad has all of the above data, provide another 40 points.
 
-* Yo como encargado de calidad quiero que los usuarios no vean anuncios irrelevantes para que el usuario siempre vea contenido de calidad en idealista. Un anuncio se considera irrelevante si tiene una puntación inferior a 40 puntos.
+* As a quality manager, I want users not to see irrelevant ads so that the user always sees quality content on idealista. An ad is considered irrelevant if it scores less than 40 points.
 
-* Yo como encargado de calidad quiero poder ver los anuncios irrelevantes y desde que fecha lo son para medir la calidad media del contenido del portal.
+* As a quality manager I want to be able to see the irrelevant ads and from what date they are irrelevant to measure the average quality of the content of the portal.
 
-* Yo como usuario de idealista quiero poder ver los anuncios ordenados de mejor a peor para encontrar fácilmente mi vivienda.
+* As an idealista user, I want to be able to see the ads ordered from best to worst to easily find my home.
 
 ## Consideraciones importantes
 
