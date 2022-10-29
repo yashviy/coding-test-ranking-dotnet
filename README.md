@@ -6,7 +6,7 @@ This repository contains a partially developed API to develop a service that is 
 
 The assumptions are based on a hypothetical *ads quality management team*, which requires a series of automatic checks to classify the ads based on a series of specific characteristics.
 
-## Historias de usuario
+## User Stories
 
 * As head of the ad quality management team, I want to assign a score to an ad so that idealista users can sort ads from most complete to least complete. The ad score is a value between 0 and 100 that is calculated taking into account the following rules:
   * If the ad does not have any photos, 10 points will be deducted. Each photo in the listing earns 20 points if it's a high-resolution (HD) photo, or 10 if it's not.
